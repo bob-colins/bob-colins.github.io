@@ -1,6 +1,6 @@
-site: Board Jekyll Theme
+site: Chouyo LLC | 顧客とつなぐ、チームを結ぶ。
 
-url: 
+url: https://www.chouyo.ink
 baseurl: 
 
 collections:
@@ -9,10 +9,10 @@ collections:
     permalink: /:name
   posts:
     output: true
-    permalink: /blog/:slug
-  projects:
+    permalink: /posts/:slug
+  books:
     output: true
-    permalink: /project/:slug
+    permalink: /books/:slug
 
 defaults:
   -
@@ -35,9 +35,9 @@ defaults:
   -
     scope:
       path: ""
-      type: "projects"
+      type: "books"
     values:
-      layout: "project"
+      layout: "book"
 
 markdown: kramdown
 
@@ -52,8 +52,13 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
 
+# Github Pagesはjekyll-paginate version 1.1.0を使用している。
+# 当該バージョンはpostsのみページネーションできる。
+# v2以降はcollectionなどもページネーションできるが、Github Actionなどを使用して頑張る必要がある。
+# めんどくさいので一旦放置。
+# TODO: jekyll-paginate-v2を使用できるようにする（https://talk.jekyllrb.com/t/paginate-v2-with-github-pages-confusion/6471）
 paginate: 10
-paginate_path: "/blog/page:num/"
+paginate_path: "/posts/page:num/"
 
 grid_alignments:
   - top

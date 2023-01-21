@@ -1,5 +1,5 @@
 basic_settings:
-  site_title: Board
+  site_title: Chouyo LLC | 顧客とつなぐ、チームを結ぶ。
   favicon_image: /images/favicon.png
 
 header_settings:
@@ -8,17 +8,19 @@ header_settings:
 
 menu_settings:
   menu_items:
-    - title: 'Projects'
-      url: '/'
-    - title: 'Blog'
-      url: '/blog/'
-    - title: 'About'
-      url: '/about'
+    - title: '書評'
+      url: '/books'
+    - title: '記事'
+      url: '/posts/'
+    - title: '会社情報'
+      url: '/company'
+    - title: '代表紹介'
+      url: '/introduction'
     - title: 'Contact'
       url: '/contact'
 
 footer_settings:
-  footer_tagline: Board – a stylish full-width masonry grid Jekyll theme
+  footer_tagline: Chouyo LLC - 顧客とつなぐ、チームを結ぶ。
 
 grid_settings:
   overlay_opacity: 0.8
